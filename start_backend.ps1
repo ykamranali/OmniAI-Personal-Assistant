@@ -1,0 +1,4 @@
+Write-Host "Starting OmniAI Backend..." -ForegroundColor Cyan
+.\backend\venv\Scripts\Activate.ps1
+cd backend
+uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
